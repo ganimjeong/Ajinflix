@@ -1,0 +1,199 @@
+
+/* 전체 */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121721; /* 짙은 남색 배경 */
+    color: #e0e0e0; /* 눈 편한 흰색 계열 */
+  }
+
+  html {
+    scroll-behavior: smooth; 
+    /* 앵커스크롤 부드럽게하는거 */
+  } 
+
+/* 헤더 */
+
+.header {
+    background-color: #181f2b; /* 푸터와 통일된 배경색 */
+    padding: 20px 0;
+    border-bottom: 1px solid #2c3542;
+    position: sticky; /* 스크롤해도 상단 고정 */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    color: #90caf9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ffffff;
+  }
+  
+
+  /* 검색 */
+  .main {
+    background-color: #121721;
+  }
+  .search.search-box.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 20px;
+    background-color: #181f2b;
+  }
+  
+  .search input[type="text"] {
+    padding: 12px 16px;
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    background-color: #121721;
+    color: #f1f1f1;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 0 0 1px #2c3442;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .search input[type="text"]::placeholder {
+    color: #777;
+  }
+  
+  .search input[type="text"]:focus {
+    box-shadow: 0 0 0 2px #3a97ff;
+  }
+  
+  .search button {
+    padding: 12px 20px;
+    background-color: #3a97ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search button:hover {
+    background-color: #5aadff;
+  }
+  
+#noResults {
+    display: none; /* JS에서 토글 */
+    background-color: #181f2b;
+    color: #f1f1f1;
+    padding: 100px 20px 100px 20px;
+    margin: 30px auto 600px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+
+/* 영화 카드 */
+.maintitle{
+    color: #f1f1f1;
+    margin: 70px 0px 50px 10%;
+    font-size: 1.7rem;
+}
+.movies{
+    background-color: #121721;
+}
+
+#card{
+    width: 1200px;
+            margin: 30px auto 0px auto;
+}
+
+/* 다크모드로 색깔수정 */
+
+.custom-dark-bg {
+    background-color: #181f2b;
+    color: #e0e0e0;
+  }
+  
+  
+  .custom-dark-bg .card {
+    background-color: #1b2430;
+    border: 1px solid #2c3542;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .custom-dark-modal .modal-content {
+    background-color: #1b2430;
+    color: #e0e0e0;
+    border: none;
+  }
+  
+  .custom-dark-modal .modal-header,
+  .custom-dark-modal .modal-footer {
+    border-color: #2c3542;
+  }
+  
+  .custom-dark-modal .btn-close {
+    filter: invert(1);
+  }
+  
+
+  /* 푸터 */
+
+  .footer {
+    background-color: #181f2b;
+    padding: 20px 0;
+    border-top: 1px solid #2c3542;
+  }
+  
+  .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #aab4be;
+    font-size: 14px;
+  }
+  
+  .footer-nav {
+    margin-top: 10px;
+  }
+  
+  .footer-nav a {
+    margin: 0 12px;
+    color: #90caf9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #ffffff;
+  }
+  
